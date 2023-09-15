@@ -67,7 +67,6 @@ class WaterBottle implements WatterBottleInterface{
         return "Bottle color is " + getColor()
          + " capacity of the bottle is " + getCapacity() 
          + " and bottle is filled " + getFilled();
-
     }
 
     @Override
