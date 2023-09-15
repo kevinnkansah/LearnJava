@@ -39,6 +39,7 @@ public class BinarySearch {
         System.out.print("Enter the target value: ");
         int target = scanner.nextInt();
 
+        scanner.close();
 
         int index = binarySearch(array, target);
 
