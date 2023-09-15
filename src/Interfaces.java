@@ -11,6 +11,7 @@ class WaterBottle implements WatterBottleInterface{
     int amountToFill;
     int amountToDrink;
     boolean isFilled = false;
+    boolean isClosed = true;
 
     WaterBottle(String color, int capacity) {
         this.color = color;
@@ -19,10 +20,6 @@ class WaterBottle implements WatterBottleInterface{
 
     public String getColor() {
         return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
     }
 
     public int getCapacity() {
@@ -35,6 +32,16 @@ class WaterBottle implements WatterBottleInterface{
 
     public int getAmountToDrink() {
         return amountToDrink;
+    }
+    public boolean getFilled() {
+        return isFilled;
+    }
+    public boolean getClosed() {
+        return isClosed;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public void setAmountToDrink(int amountToDrink) {
@@ -49,6 +56,20 @@ class WaterBottle implements WatterBottleInterface{
         this.capacity = capacity;
     }
 
+    public void setFilled(boolean isFilled) {
+        this.isFilled = isFilled;
+    }
+    public void setCLosed(boolean isClosed) {
+        this.isClosed = isClosed;
+    }
+
+    public String toString() {
+        return "Bottle color is " + getColor()
+         + " capacity of the bottle is " + getCapacity() 
+         + " and bottle is filled " + getFilled();
+
+    }
+
     @Override
     public void fillUp() {
         capacity = this.capacity;
@@ -57,13 +78,8 @@ class WaterBottle implements WatterBottleInterface{
     @Override
     public void empty() {
         capacity = 0;
-
-
-
     }
 }
-
-
 
 public class Interfaces {
     public static void main(String[] args) {
