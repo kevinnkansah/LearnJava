@@ -85,5 +85,6 @@ public class Interfaces {
         WaterBottle bottle = new WaterBottle("pink", 1000);
 
         System.out.println(bottle);
+        
     }
 }
