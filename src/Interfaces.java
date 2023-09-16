@@ -67,7 +67,6 @@ class WaterBottle implements WatterBottleInterface{
         return "Bottle color is " + getColor()
          + " capacity of the bottle is " + getCapacity() 
          + " and bottle is filled " + getFilled();
-
     }
 
     @Override
@@ -86,9 +85,13 @@ public class Interfaces {
         WaterBottle bottle = new WaterBottle("pink", 1000);
 
         System.out.println(bottle);
+<<<<<<< HEAD
         bottle.fillUp();
         System.out.println(bottle.getAmountToDrink());
         bottle.empty();
         System.out.println(bottle.getAmountToDrink());
+=======
+        
+>>>>>>> 98f4f71f1eb7b14c31e7443395a46d63d0d3dd36
     }
 }
