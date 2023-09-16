@@ -79,19 +79,15 @@ class WaterBottle implements WatterBottleInterface{
         this.capacity = 0;
     }
 }
-
 public class Interfaces {
     public static void main(String[] args) {
         WaterBottle bottle = new WaterBottle("pink", 1000);
 
         System.out.println(bottle);
-<<<<<<< HEAD
         bottle.fillUp();
         System.out.println(bottle.getAmountToDrink());
         bottle.empty();
         System.out.println(bottle.getAmountToDrink());
-=======
-        
->>>>>>> 98f4f71f1eb7b14c31e7443395a46d63d0d3dd36
+       
     }
 }
