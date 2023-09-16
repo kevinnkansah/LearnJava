@@ -6,7 +6,7 @@ public class Question2ReverseEnginnering {
         boolean gameOver = false; // A boolean variable to control the game loop.
         Scanner scanner = new Scanner(System.in); // Create a Scanner object for user input.
 
-        while (true) { // Outer game loop (runs indefinitely until manually stopped).
+        while (true) { // Outer game loop (runs until manually stopped).
             while (!gameOver) { // Inner loop for each round of the game (runs until a winner is determined).
                 System.out.println("Player 1, choose P, R, or S.");
                 String player1Choice = scanner.next().toLowerCase(); // Read player 1's choice and convert it to lowercase.
@@ -37,7 +37,7 @@ public class Question2ReverseEnginnering {
                 }
             }
 
-            return; // Exit the program (outer loop will run indefinitely).
+            return; // Exit the program
         }
     }
 }
