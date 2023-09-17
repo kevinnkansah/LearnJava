@@ -71,20 +71,23 @@ class WaterBottle implements WatterBottleInterface{
 
     @Override
     public void fillUp() {
-        capacity = this.capacity;
+        amountToDrink = this.capacity;
     }
 
     @Override
     public void empty() {
-        capacity = 0;
+        this.capacity = 0;
     }
 }
-
 public class Interfaces {
     public static void main(String[] args) {
         WaterBottle bottle = new WaterBottle("pink", 1000);
 
         System.out.println(bottle);
-        
+        bottle.fillUp();
+        System.out.println(bottle.getAmountToDrink());
+        bottle.empty();
+        System.out.println(bottle.getAmountToDrink());
+       
     }
 }
