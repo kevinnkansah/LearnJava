@@ -1,3 +1,7 @@
+import java.util.Scanner;
+
+
+
 interface WatterBottleInterface {
     String  color = "Blue";
     void fillUp();
@@ -10,8 +14,11 @@ class WaterBottle implements WatterBottleInterface{
     int capacity;
     int amountToFill;
     int amountToDrink;
+
+    int amountDrank;
     boolean isFilled = false;
     boolean isClosed = true;
+
 
     WaterBottle(String color, int capacity) {
         this.color = color;
@@ -26,13 +33,15 @@ class WaterBottle implements WatterBottleInterface{
         return capacity;
     }
 
-    public int getAmountToFill() {
-        return amountToFill;
-    }
 
     public int getAmountToDrink() {
         return amountToDrink;
     }
+
+    public int getAmountDrank() {
+        return amountDrank;
+    }
+
     public boolean getFilled() {
         return isFilled;
     }
@@ -48,8 +57,9 @@ class WaterBottle implements WatterBottleInterface{
         this.amountToDrink = amountToDrink;
     }
 
-    public void setAmountToFill(int amountToFill) {
-        this.amountToFill = amountToFill;
+
+    public void setAmountDrank(int amountDrank) {
+        this.amountDrank = amountDrank;
     }
 
     public void setCapacity(int capacity) {
@@ -59,14 +69,18 @@ class WaterBottle implements WatterBottleInterface{
     public void setFilled(boolean isFilled) {
         this.isFilled = isFilled;
     }
-    public void setCLosed(boolean isClosed) {
+    public void setClosed(boolean isClosed) {
         this.isClosed = isClosed;
     }
 
+    
+    public void drink( int amountDrank) {
+        amountToDrink -=  amountDrank;
+    }
     public String toString() {
         return "Bottle color is " + getColor()
          + " capacity of the bottle is " + getCapacity() 
-         + " and bottle is filled " + getFilled();
+         + " and the amount of water you've drank is " + getAmountDrank();
     }
 
     @Override
@@ -76,18 +90,20 @@ class WaterBottle implements WatterBottleInterface{
 
     @Override
     public void empty() {
-        this.capacity = 0;
+        this.amountToDrink = 0;
     }
 }
 public class Interfaces {
     public static void main(String[] args) {
+        //Scanner scanner = new Scanner(System.in);
         WaterBottle bottle = new WaterBottle("pink", 1000);
 
         System.out.println(bottle);
         bottle.fillUp();
-        System.out.println(bottle.getAmountToDrink());
+        bottle.drink(100);
         bottle.empty();
+        System.out.println(bottle);
         System.out.println(bottle.getAmountToDrink());
-       
+        System.out.println(bottle);
     }
 }
