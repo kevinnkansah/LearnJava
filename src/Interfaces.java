@@ -1,7 +1,4 @@
 import java.util.Scanner;
-
-
-
 interface WatterBottleInterface {
     String  color = "Blue";
     void fillUp();
@@ -13,7 +10,7 @@ class WaterBottle implements WatterBottleInterface{
     String color;
     int capacity;
     int amountToFill;
-    int amountToDrink;
+    int amountToConsume;
 
     int amountDrank;
     boolean isFilled = false;
@@ -34,8 +31,8 @@ class WaterBottle implements WatterBottleInterface{
     }
 
 
-    public int getAmountToDrink() {
-        return amountToDrink;
+    public int getAmountToConsume() {
+        return amountToConsume;
     }
 
     public int getAmountDrank() {
@@ -53,8 +50,8 @@ class WaterBottle implements WatterBottleInterface{
         this.color = color;
     }
 
-    public void setAmountToDrink(int amountToDrink) {
-        this.amountToDrink = amountToDrink;
+    public void setAmountToConsume(int amountToConsume) {
+        this.amountToConsume = amountToConsume;
     }
 
 
@@ -74,8 +71,8 @@ class WaterBottle implements WatterBottleInterface{
     }
 
     
-    public void drink( int amountDrank) {
-        amountToDrink -=  amountDrank;
+    public void consume( int consume) {
+        amountToConsume -=  amountDrank;
     }
     public String toString() {
         return "Bottle color is " + getColor()
@@ -85,12 +82,12 @@ class WaterBottle implements WatterBottleInterface{
 
     @Override
     public void fillUp() {
-        amountToDrink = this.capacity;
+        amountToConsume = this.capacity;
     }
 
     @Override
     public void empty() {
-        this.amountToDrink = 0;
+        this.amountToConsume = 0;
     }
 }
 public class Interfaces {
@@ -100,10 +97,10 @@ public class Interfaces {
 
         System.out.println(bottle);
         bottle.fillUp();
-        bottle.drink(100);
+        bottle.consume(100);
         bottle.empty();
         System.out.println(bottle);
-        System.out.println(bottle.getAmountToDrink());
+        System.out.println(bottle.getAmountToConsume());
         System.out.println(bottle);
     }
 }
