@@ -70,9 +70,16 @@ class WaterBottle implements WatterBottleInterface{
         this.isClosed = isClosed;
     }
 
-    
-    public void consume( int consume) {
-        amountToConsume -=  amountDrank;
+    public void open() {
+        isClosed = false;
+    }
+    public void consume( int amountDrank) { //inputted amount drank is not overwriting itself
+        if (!getClosed()) {
+            amountToConsume -=  amountDrank;
+        }
+        else {
+            System.out.println("You must open the bottle to consume.");
+        }
     }
     public String toString() {
         return "Bottle color is " + getColor()
@@ -83,6 +90,7 @@ class WaterBottle implements WatterBottleInterface{
     @Override
     public void fillUp() {
         amountToConsume = this.capacity;
+        isFilled = true;
     }
 
     @Override
@@ -97,10 +105,9 @@ public class Interfaces {
 
         System.out.println(bottle);
         bottle.fillUp();
+        bottle.open();
         bottle.consume(100);
         bottle.empty();
-        System.out.println(bottle);
-        System.out.println(bottle.getAmountToConsume());
         System.out.println(bottle);
     }
 }
