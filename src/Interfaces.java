@@ -1,4 +1,4 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 interface WatterBottleInterface {
     String  color = "Blue";
     void fillUp();
