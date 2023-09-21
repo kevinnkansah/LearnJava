@@ -6,13 +6,13 @@ interface WatterBottleInterface {
 }
 
 class WaterBottle implements WatterBottleInterface{
-    String color;
-    int capacity;
-    int amountToFill;
-    int amountToConsume;
-    int amountDrank;
-    boolean isFilled = false;
-    boolean isClosed = true;
+    private String color;
+    private int capacity;
+    private int amountToFill;
+    private int amountToConsume;
+    private int amountDrank;
+    private boolean isFilled = false;
+    private boolean isClosed = true;
 
 
     WaterBottle(String color, int capacity) {
@@ -109,3 +109,7 @@ public class Interfaces {
         System.out.println(bottle);
     }
 }
+
+
+
+
