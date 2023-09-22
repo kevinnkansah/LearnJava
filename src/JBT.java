@@ -13,7 +13,7 @@ public class JBT {
 
     public static void main(String[] args) {
         JBT obj = new JBT("Gabe", 90);
-        
+        obj.toString();
     }
 
 
