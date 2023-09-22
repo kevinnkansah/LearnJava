@@ -10,7 +10,7 @@ import java.util.Scanner; // Import the Scanner class to read text files
 public class Lecture1_readFile {
   public static void main(String[] args) {
     try {
-      File myObj = new File("file3.txt");
+      File myObj = new File("C:\\Users\\User\\Documents\\GitHub\\LearnJava\\src\\cipher1.txt");
       Scanner myReader = new Scanner(myObj);
       while (myReader.hasNextLine()) {
         String data = myReader.nextLine();

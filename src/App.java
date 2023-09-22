@@ -6,13 +6,13 @@ public class App {
     public static void main(String[] args) {
         // Array of file names to search for the character's name
         String[] fileNames = {
-            "textfile1.txt",
-            "textfile2.txt",
-            "textfile3.txt",
-            "textfile4.txt",
-            "textfile5.txt",
-            "textfile6.txt",
-            "textfile7.txt"
+                "cipher1.txt",
+                "cipher2.txt",
+                "cipher3.txt",
+                "cipher4.txt",
+                "cipher5.txt",
+                "cipher6.txt",
+                "cipher7.txt"
         };
 
         // Initialize an empty string to store concatenated first least occurring letters
