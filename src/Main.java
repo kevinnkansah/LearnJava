@@ -1,4 +1,4 @@
-class Superclass {
+/*class Superclass {
     int x = 10;
 
     void display() {
@@ -15,14 +15,17 @@ class Subclass extends Superclass {
         System.out.println("Superclass x: " + super.x);
         super.display();
     }
-}
+}*/
 
 public class Main {
     public static void main(String[] args) {
-        Subclass obj = new Subclass();
-        obj.display();
-        
+        var randomAnimal = new Animal("yellow", 4);
+        var husky = new Dog("brown", 4);
 
-        
+        System.out.println(husky.toString());
+        System.out.println(randomAnimal.toString());
+
+        System.out.println(husky.makeSound());
+        System.out.println(randomAnimal.makeSound());
     }
 }

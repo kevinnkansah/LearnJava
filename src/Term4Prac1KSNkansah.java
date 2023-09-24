@@ -36,6 +36,7 @@ public class Term4Prac1KSNkansah {
                 middleLetters.add(letters.get(middleIndex));
 
                 fileReader.close();
+
             } catch (FileNotFoundException e) {
                 System.out.println("An error occurred.");
                 e.printStackTrace();
@@ -43,9 +44,11 @@ public class Term4Prac1KSNkansah {
         }
 
         String name = "";
+
         for (Character letter : middleLetters) {
             name += letter;
         }
+
         String reversedName = name;
         String actorName = "";
         for (int i = reversedName.length() - 1; i >= 0; i--) {
