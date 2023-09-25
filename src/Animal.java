@@ -37,11 +37,28 @@ class Animal {
     }
 }
 class Dog extends Animal {
-    Dog(String colour, int legs) {
+    private String breed;
+    Dog(String colour, int legs, String breed) {
         super(colour, legs);
+        this.breed = breed;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
+
+    public void setBreed(String breed) {
+        this.breed = breed;
     }
     @Override
     public String makeSound() {
+        super.makeSound();
         return "Barking";
+    }
+    class Husky extends Dog {
+        Husky(String colour, int legs, String breed) {
+            super(colour, legs, breed);
+        }
     }
 }

@@ -19,13 +19,18 @@ class Subclass extends Superclass {
 
 public class Main {
     public static void main(String[] args) {
-        var randomAnimal = new Animal("yellow", 4);
-        var husky = new Dog("brown", 4);
+        Animal animal = new Animal("yellow", 4);
+        Dog dog = new Dog("brown", 4, "husky");
+        Husky docky = new Husky("white", 4, "siberian");
 
-        System.out.println(husky.toString());
-        System.out.println(randomAnimal.toString());
+        System.out.println(animal.toString());
+        System.out.println(dog.toString());
 
-        System.out.println(husky.makeSound());
-        System.out.println(randomAnimal.makeSound());
+
+        System.out.println(" ");
+
+        System.out.println(animal.makeSound());
+        System.out.println(dog.makeSound());
+
     }
 }
