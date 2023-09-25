@@ -22,9 +22,11 @@ class Animal {
     public void setLegs(int legs) {
         this.legs = legs;
     }
+
     public String toString() {
-        return getClass() + ": " +  " colour is " + getColour() + " number of legs is " + getLegs();
+        return getClass() + ": " + " colour is " + getColour() + " number of legs is " + getLegs();
     }
+
     public String sleep() {
         return "Sleeping...";
     }
@@ -32,12 +34,15 @@ class Animal {
     public String eat() {
         return "Eating...";
     }
+
     public String makeSound() {
         return "Making a sound";
     }
 }
+
 class Dog extends Animal {
     private String breed;
+
     Dog(String colour, int legs, String breed) {
         super(colour, legs);
         this.breed = breed;
@@ -47,18 +52,18 @@ class Dog extends Animal {
         return breed;
     }
 
-
     public void setBreed(String breed) {
         this.breed = breed;
     }
+
     @Override
     public String makeSound() {
-        super.makeSound();
         return "Barking";
     }
-    class Husky extends Dog {
-        Husky(String colour, int legs, String breed) {
-            super(colour, legs, breed);
-        }
+}
+
+class Husky extends Dog {
+    Husky(String colour, int legs, String breed) {
+        super(colour, legs, breed);
     }
 }
