@@ -1,0 +1,15 @@
+The code is a Java program that takes the user’s birth year and the nth birthday as input and computes the year in which the person’s nth birthday will occur or has occurred.
+
+The program starts by importing the Scanner class from the java.util package. The Scanner class is used to read input from the user.
+
+The program then declares two integer variables, birthYear and nthBirthday, to store the user’s input.
+
+The program prompts the user to enter their birth year and nth birthday using System.out.println() statements.
+
+The program reads the user’s input using the Scanner.nextInt() method and stores it in the birthYear and nthBirthday variables.
+
+The program then calculates the year of the nth birthday by adding the birthYear and nthBirthday variables together.
+
+The program calculates the suffix for the nth birthday (e.g. “st” for 1st, “nd” for 2nd, etc.) by taking the remainder of nthBirthday divided by 10 and using an if-else statement to determine which suffix to use.
+
+Finally, the program prints out a message to the user that includes their birth year, their nth birthday with its corresponding suffix, and the year in which their nth birthday will occur or has occurred using System.out.printf() method1.

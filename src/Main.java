@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -31,8 +29,6 @@ public class Main {
             }
             var andre = people.get(0);
             System.out.println(andre.toString());
-
-
 
             fileReader.close();
 
