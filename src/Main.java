@@ -1,36 +1,45 @@
-/*class Superclass {
-    int x = 10;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
 
-    void display() {
-        System.out.println("Inside Superclass");
-    }
-}
 
-class Subclass extends Superclass {
-    int x = 20;
-
-    void display() {
-        System.out.println("Inside Subclass");
-        System.out.println("Subclass x: " + x);
-        System.out.println("Superclass x: " + super.x);
-        super.display();
-    }
-}*/
 
 public class Main {
     public static void main(String[] args) {
-        Animal animal = new Animal("yellow", 4);
-        Dog dog = new Dog("brown", 4, "husky");
-        Husky docky = new Husky("white", 4, "siberian");
+        ArrayList<String> lines = new ArrayList<>();
 
-        System.out.println(animal.toString());
-        System.out.println(dog.toString());
+        try {
+            //var person = new Person[9];
+            File textFile = new File("C:\\Users\\User\\Documents\\GitHub\\LearnJava\\src\\mainrecord.txt");
+            Scanner fileReader = new Scanner(textFile);
+
+            while (fileReader.hasNextLine()) {
+                lines.add(fileReader.nextLine());
+            }
+
+            ArrayList<Person> people = new ArrayList<>();
+
+            for (String line : lines) {
+                String[] personData = line.split(",");
+                Person person = new Person(personData[0], personData[1], personData[2], personData[3], personData[4], personData[5]);
+                people.add(person);
 
 
-        System.out.println(" ");
+            }
+            var andre = people.get(0);
+            System.out.println(andre.toString());
 
-        System.out.println(animal.makeSound());
-        System.out.println(dog.makeSound());
 
+
+            fileReader.close();
+
+        } catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        
+        }
     }
 }
