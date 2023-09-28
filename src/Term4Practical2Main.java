@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 
 
 
-public class Main {
+public class Term4Practical2Main {
     public static void main(String[] args) {
         ArrayList<String> lines = new ArrayList<>();
 
@@ -24,8 +24,6 @@ public class Main {
                 String[] personData = line.split(",");
                 Person person = new Person(personData[0], personData[1], personData[2], personData[3], personData[4], personData[5]);
                 people.add(person);
-
-
             }
             var andre = people.get(0);
             System.out.println(andre.toString());
@@ -35,7 +33,6 @@ public class Main {
         } catch (FileNotFoundException e) {
             System.out.println("An error occurred.");
             e.printStackTrace();
-        
         }
     }
 }
