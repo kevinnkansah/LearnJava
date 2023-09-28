@@ -1,3 +1,7 @@
+/* Student number:  4384756
+  Name : Kevin Sesu Nkansah
+ */
+
 public class Person {
     private String firstName, surName, email, position, department, phoneNumber;
 
@@ -8,6 +12,9 @@ public class Person {
         this.position = position;
         this.department = department;
         this.phoneNumber = phoneNumber;
+    }
+    Person(){
+        this("-", "-", "-", "-","-", "-" );
     }
 
     public String getFirstName() {
