@@ -40,7 +40,6 @@ public class term4prac2_4384756 {
             studentWriter.close();
             staffWriter.close();
             fileReader.close();
-
         
         } catch (FileNotFoundException e) {
             System.out.println("An error occurred.");
