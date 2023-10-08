@@ -47,8 +47,6 @@ public class Sprint2GUI extends JFrame {
                     infoWriter.write("Email: " + email + "\n");
                     infoWriter.write("Password Hash: " + password.hashCode() + "\n" +
                             "---------------------------------- \n");
-
-
                     infoWriter.close();
 
                     JOptionPane.showMessageDialog(Sprint2GUI.this, "User successfully created");
@@ -61,7 +59,6 @@ public class Sprint2GUI extends JFrame {
                 } catch (IOException ex) {
                     throw new RuntimeException(ex);
                 }
-
             }
         });
     }
