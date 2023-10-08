@@ -45,7 +45,7 @@ public class Sprint2GUI extends JFrame {
                     infoWriter.write("First Name: " + firstName + "\n");
                     infoWriter.write("Surname: " + surName + "\n");
                     infoWriter.write("Email: " + email + "\n");
-                    infoWriter.write("Password : " + password.hashCode() + "\n" +
+                    infoWriter.write("Password Hash: " + password.hashCode() + "\n" +
                             "---------------------------------- \n");
 
 
