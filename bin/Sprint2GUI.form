@@ -119,7 +119,7 @@
         <properties>
           <font name="FreeSans" size="14"/>
           <foreground color="-513"/>
-          <text value="Password"/>
+          <text value="Confirm Password"/>
         </properties>
       </component>
       <component id="76941" class="javax.swing.JLabel" binding="jlNewPassword">
@@ -129,7 +129,7 @@
         <properties>
           <font name="FreeSans" size="14"/>
           <foreground color="-513"/>
-          <text value="New Password"/>
+          <text value="Password"/>
         </properties>
       </component>
       <hspacer id="87b82">

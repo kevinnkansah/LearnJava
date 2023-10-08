@@ -1,6 +1,4 @@
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -19,12 +17,13 @@ public class Sprint2GUI extends JFrame {
     private JLabel jlNewPassword;
 
     public Sprint2GUI() {
-        setTitle("Sprint 2 GUI");
+        setTitle("Login");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(600, 400);
         setContentPane(MainPanel);
         setLocationRelativeTo(null);
         setVisible(true);
+        setResizable(false);
 
         btnSubmit.addActionListener(e -> {
 
@@ -42,12 +41,22 @@ public class Sprint2GUI extends JFrame {
                 
             } else {
                 try {
-                    FileWriter infoWriter = new FileWriter("info.txt");
+                    FileWriter infoWriter = new FileWriter("info.txt", true);
                     infoWriter.write("First Name: " + firstName + "\n");
                     infoWriter.write("Surname: " + surName + "\n");
                     infoWriter.write("Email: " + email + "\n");
+                    infoWriter.write("Password : " + password.hashCode() + "\n" +
+                            "---------------------------------- \n");
+
 
                     infoWriter.close();
+
+                    JOptionPane.showMessageDialog(Sprint2GUI.this, "User successfully created");
+                    textField1.setText(" ");
+                    textField2.setText(" ");
+                    textField3.setText(" ");
+                    passwordField1.setText(null);
+                    passwordField2.setText(null);
 
                 } catch (IOException ex) {
                     throw new RuntimeException(ex);
