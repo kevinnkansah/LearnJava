@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class Sprint2GUI extends JFrame {
+public class Sprint3GUI extends JFrame {
     private JPanel MainPanel;
     private JTextField textField1;
     private JTextField textField2;
@@ -16,7 +16,7 @@ public class Sprint2GUI extends JFrame {
     private JLabel jlPassword;
     private JLabel jlNewPassword;
 
-    public Sprint2GUI() {
+    public Sprint3GUI() {
         setTitle("Login");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(600, 400);
@@ -34,10 +34,10 @@ public class Sprint2GUI extends JFrame {
             String password = new String(passwordField2.getPassword());
 
             if (!password.equals(newPassword)) {
-                JOptionPane.showMessageDialog(Sprint2GUI.this, "Passwords do not match.");
+                JOptionPane.showMessageDialog(Sprint3GUI.this, "Passwords do not match.");
                 
             } else if (firstName.isEmpty() || surName.isEmpty() || email.isEmpty() || newPassword.isEmpty()) {
-                JOptionPane.showMessageDialog(Sprint2GUI.this, "Please fill in all empty spaces.");
+                JOptionPane.showMessageDialog(Sprint3GUI.this, "Please fill in all empty spaces.");
                 
             } else {
                 try {
@@ -49,7 +49,7 @@ public class Sprint2GUI extends JFrame {
                             "---------------------------------- \n");
                     infoWriter.close();
 
-                    JOptionPane.showMessageDialog(Sprint2GUI.this, "User successfully created");
+                    JOptionPane.showMessageDialog(Sprint3GUI.this, "User successfully created");
                     textField1.setText(" ");
                     textField2.setText(" ");
                     textField3.setText(" ");
@@ -62,6 +62,6 @@ public class Sprint2GUI extends JFrame {
         });
     }
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(Sprint2GUI::new);
+        SwingUtilities.invokeLater(Sprint3GUI::new);
     }
 }
