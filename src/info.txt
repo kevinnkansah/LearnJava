@@ -1,0 +1,20 @@
+First Name: Kevin
+Surname: Nkansah
+Email: kevinnkansah6@gmail.com
+Password Hash: -2039899476
+---------------------------------- 
+First Name:  Gabe 
+Surname:  Vincent
+Email:  gabevincent@gmail.com
+Password Hash: 1509442
+---------------------------------- 
+First Name:  Wendy 
+Surname:  Tiwah
+Email: tiwahwendy@gmail.com
+Password Hash: 108268
+---------------------------------- 
+First Name: Mapper 
+Surname:  Bullets
+Email:  ogmapperbullets@gmail.com
+Password Hash: 109
+---------------------------------- 

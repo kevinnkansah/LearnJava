@@ -49,6 +49,9 @@ public class FoodItem {
     }
 
     public static void main(String[] args) {
+        out.print("This is a demo of my Restaurant Inventory System. Given the price and quantity of an item, it will compute the totals for each respectively. ");
+
+
         Scanner input = new Scanner(System.in);
         String makeItem = "Y";
 
@@ -70,9 +73,19 @@ public class FoodItem {
         }
 
         double subTotal = 0;
-        for (FoodItem item: foodItems)
+        for (FoodItem item: foodItems) {
             subTotal += item.getTotalPrice();
+        }
+
         out.println("Subtotal: R" + subTotal);
+
+        int totalQuantiy = 0;
+        for (FoodItem item: foodItems) {
+            totalQuantiy += item.getQuantity();
+        }
+
+        out.println("Total Quantity: " + totalQuantiy);
+
     }
 }
 

@@ -41,7 +41,7 @@ public class Sprint2GUI extends JFrame {
                 
             } else {
                 try {
-                    FileWriter infoWriter = new FileWriter("info.txt", true);
+                    FileWriter infoWriter = new FileWriter("src/info.txt", true);
                     infoWriter.write("First Name: " + firstName + "\n");
                     infoWriter.write("Surname: " + surName + "\n");
                     infoWriter.write("Email: " + email + "\n");
@@ -58,8 +58,7 @@ public class Sprint2GUI extends JFrame {
 
                 } catch (IOException ex) {
                     throw new RuntimeException(ex);
-                }
-            }
+                }}
         });
     }
     public static void main(String[] args) {
