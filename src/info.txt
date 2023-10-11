@@ -18,3 +18,8 @@ Surname:  Bullets
 Email:  ogmapperbullets@gmail.com
 Password Hash: 109
 ---------------------------------- 
+First Name: Kevin 
+Surname: NKansah
+Email: kevinnkansah6@gmail.com
+Password Hash: 1509442
+---------------------------------- 

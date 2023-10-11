@@ -13,7 +13,6 @@ public class BMICalculator {
         System.out.print("Enter your height in meters: ");
         h = Double.parseDouble(scanner.next());
 
-
         System.out.print("Enter your weight in kg: ");
         w = Double.parseDouble(scanner.next());
 
@@ -24,7 +23,7 @@ public class BMICalculator {
         } else if (bmi(h,w) < 25 && bmi(h,w) < 29.29) {
             System.out.println("Overweight");
         } else {
-            System.out.println("Fat as f*ck");
+            System.out.println("Morbidly obese");
         }
         System.out.println("Your BMI is: "+ bmi(h, w));
 

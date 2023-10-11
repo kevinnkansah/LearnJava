@@ -1,9 +1,0 @@
-Andre,Henney,ahenney@uwc.ac.za,staff,computer science,0835329141
-Rickon,Stark,rickonstark@uwc.ac.za,staff,statistics,0741234567
-Robb,Stark,robbstartk@uwc.ac.za,student,computer science,0618901234
-Bran,Stark,branstark@uwc.ac.za,staff,computer science,0825678901
-Eddard,Stark,eddardstark@uwc.ac.za,student,statistics,0642345678
-Catelyn,Stark,catelynstark@uwc.ac.za,staff,statistics,0879012345
-Sansa,Stark,sansastark@uwc.ac.za,staff,mathematics,0796789012
-Arya,Stark,aryastark@uwc.ac.za,student,mathematics,0653456789
-Jon,Snow,johnsnow@uwc.ac.za,staff,mathematics,0660123456
