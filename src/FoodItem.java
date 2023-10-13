@@ -83,7 +83,6 @@ public class FoodItem {
         for (FoodItem item: foodItems) {
             totalQuantiy += item.getQuantity();
         }
-
         out.println("Total Quantity: " + totalQuantiy);
 
     }
