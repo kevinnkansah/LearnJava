@@ -23,7 +23,7 @@ public class BMICalculator {
         } else if (bmi(h,w) < 25 && bmi(h,w) < 29.29) {
             System.out.println("Overweight");
         } else {
-            System.out.println("Morbidly obese");
+            System.out.println("Morbidly obese ");
         }
         System.out.println("Your BMI is: "+ bmi(h, w));
 
